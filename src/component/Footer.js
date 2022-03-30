@@ -6,7 +6,7 @@ function Footer() {
         <div className='footer'>
             <div className="sub_section">
                 <h2>About us</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis libero facere non possimus cumque hic eius doloribus dolore necessitatibus porro?</p>
+                <p>ipsum dolor, sit amet consectetur adipisicing elit. Officiis libero facere non possimus cumque hic eius doloribus dolore necessitatibus porro?</p>
             </div>
             <div className="sub_section">
                 <h2>News letter</h2>
