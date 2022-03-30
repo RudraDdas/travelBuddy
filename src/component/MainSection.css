@@ -1,0 +1,119 @@
+.main_section{
+    display: flex;
+    margin: 30px;
+    overflow-x:hidden
+}
+.main_section_long{
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_section_long>h2, .main_section_long >p {
+    width: 70%;
+}
+.img_section{
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+}
+.img_section img{
+    width:100%;
+    z-index: -10;
+    /* visibility: hidden; */
+    transition: 0.3s ease-in-out;
+
+
+}
+.img_section img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.label{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    /* z-index: 100; */
+    bottom: 0;
+    background-color: rgb(116, 156, 115);
+    padding: 10px 15px;
+    border-radius: 15px;
+    left: 25%;
+}
+.main_section_shrt{
+    width: 30%;
+}
+.second_section{
+    margin: 20px 0;
+}
+.main_section_list ul li{
+      background-color: rgb(150, 202, 149);
+      list-style-type: none;
+      padding: 5px;
+      margin: 10px 0;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      color: white;
+}
+.main_section_list{
+    margin: 20px 20px;
+}
+.second_section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1.5px solid rgb(100, 153, 109);
+    border-width: 70%;
+    
+}
+.second_section h2,.second_section p{
+    width: 70%;
+    padding: 10px 0;
+}
+.third_section
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+.third_section h2,.third_section p{
+    width: 70%;
+    padding: 5px 0;
+}
+@media screen and (max-width:800px){
+    .main_section{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_section_long{
+        width: 100%;
+    }
+    .img_section{
+        width: 100%;
+    }
+    .main_section_long>h2, .main_section_long >p {
+        width: 90%;
+    }
+    .label{
+        left: 0;
+        border-radius: 0;
+        bottom: 3px;
+    }
+    .second_section h2,.second_section p{
+        width: 100%;
+    }
+    .main_section_shrt{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+    }
+    .third_section h2,.third_section p{
+        width: 100%;
+    }
+    ul li{
+        width: 200px;
+    }
+}

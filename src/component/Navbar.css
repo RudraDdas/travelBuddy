@@ -1,0 +1,149 @@
+:root{
+    --primary:rgb(136, 177, 136);
+    --white:rgb(255, 255, 255);
+    
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    background-color:var(--white);
+    height: 50px;
+    font-size: 20px;
+   
+ 
+    
+}
+.navbar_on{
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    height: 50px;
+    background-color:var(--white);
+
+   
+   
+
+
+}
+.heading{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    color: var(--primary);
+    font-family: 'Gochi Hand', cursive;
+    margin-left: 10px;
+    
+}
+.list-items{
+    margin: 0 auto;
+}
+.list-items ul{
+    list-style-type: none;
+    display: flex;
+    font-family: 'Changa', 'sans-serif';
+    
+
+}
+.list-items  li{
+    padding: 5px 15px;
+    transition: 0.3s ease-out ;
+    color: var(--primary);
+    border-radius: 50px;
+
+}
+.list-items li:hover{
+  background-color: var(--primary);
+  /* transition: 0.3s ease-out; */
+  color: var(--white);
+  
+}
+.social_media{
+    margin-left: auto;
+    position: relative;
+}
+.social_media i{
+    margin: 5px 5px;
+    color: var(--primary);
+    /* position: absolute; */
+    transition: 0.17s ease-in-out;
+
+
+}
+.fa-bars , .fa-times{
+    display: none;
+}
+.social_media i:hover{
+    transform: scale(1.5);
+    transition: 0.1s ease-in-out;
+
+}
+@media screen and (max-width:800px){
+        .navbar{
+           
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: 0.5s ease-in-out;
+            height: 50px;
+            font-size: 20px;
+
+             
+          
+
+ }
+        .navbar_on{
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 320px;
+            transition: 0.5s ease-out;
+            overflow: hidden;
+
+        }
+        .list-items ul{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            transition: 0.3s ease-in;
+            /* width: 100%; */
+        }
+
+        .list-items{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            
+
+ 
+        }
+        .list-items ul li{
+            padding: 10px 90px;
+         } 
+        
+        .social_media{
+            display: flex;
+            align-items: center;
+            margin: 10px auto;
+
+        }
+        .heading{
+            margin: auto;
+            margin-top: 10px;
+        }
+        .heading .fa-bars ,.heading .fa-times{
+            position: absolute;
+            right: 10px;
+        }
+        .fa-bars , .fa-times{
+            display: block;
+        }
+        
+
+}

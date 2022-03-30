@@ -1,0 +1,59 @@
+:root{
+    --primary:rgb(150, 202, 149);
+}
+.herocontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../IMAGES/Travel-Images-For-Desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    /* background-attachment:fixed; */
+    overflow: hidden;
+    position: relative;
+}
+.herocontainer svg {
+    position: absolute;
+    bottom:-6%;
+}
+.herocontainer .hero_subdiv{
+      position: absolute;
+      top: 20%;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+
+}
+.herocontainer .hero_subdiv button{
+    padding: 10px 20px;
+    color:var(--primary);
+    /* color: var(--primary); */
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    box-sizing: border-box;
+    font-weight: bold;
+    width: min-content;
+    margin: auto;
+    font-size: 15px;
+    font-family: 'Changa', 'sans-serif';
+
+
+}
+.herocontainer .hero_subdiv button:hover{
+    padding: 8px 18px;
+    background-color: rgb(255, 255, 255,0);
+    border: 2px solid #fff ;
+    color: white;
+}
+@media screen and (max-width:800px){
+    .herocontainer svg{
+        bottom:0;    
+    }
+    .herocontainer .hero_subdiv{
+        top:35%;
+    }
+}
